@@ -1,3 +1,4 @@
+
 # 📚 Exam Prep Copilot
 
 An AI study assistant built on **your own** syllabus, notes and past papers. Upload them, then:
@@ -129,3 +130,5 @@ pytest
 - Single user, no login. Data lives in `data/` on the machine running the backend.
 - Scanned (image-only) PDFs have no text to extract; run OCR first (e.g. `ocrmypdf`).
 - Short-answer marking is done by the model, so treat it as guidance, not an official grade.
+
+
