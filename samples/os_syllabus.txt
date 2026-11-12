@@ -1,0 +1,16 @@
+CS301 Operating Systems - Syllabus
+
+Unit 1: Processes and Threads
+Process concept, process states, process control block, context switching, threads and multithreading models.
+
+Unit 2: CPU Scheduling
+Scheduling criteria, First-Come-First-Served, Shortest Job First, Round Robin, priority scheduling, multilevel queue scheduling.
+
+Unit 3: Synchronization and Deadlocks
+Critical-section problem, semaphores, mutex locks, classic problems (producer-consumer, dining philosophers). Deadlock characterization, prevention, avoidance (Banker's algorithm), detection and recovery.
+
+Unit 4: Memory Management
+Contiguous allocation, paging, segmentation, virtual memory, demand paging, page replacement algorithms (FIFO, LRU, Optimal), thrashing.
+
+Unit 5: File Systems and Storage
+File concept, directory structure, allocation methods (contiguous, linked, indexed), disk scheduling algorithms.

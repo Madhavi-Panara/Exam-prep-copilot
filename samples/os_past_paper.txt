@@ -1,0 +1,9 @@
+CS301 Operating Systems - Past Paper 2024
+
+Q1. Explain the four necessary conditions for deadlock. [6 marks]
+Q2. Using the Banker's algorithm, determine whether the given system state is safe. [8 marks]
+Q3. Compare Round Robin and Shortest Job First scheduling. Which can cause starvation? [6 marks]
+Q4. Explain how paging works and show how a logical address is translated to a physical address. [8 marks]
+Q5. Calculate the number of page faults for the reference string using FIFO, LRU and Optimal replacement with 3 frames. [8 marks]
+Q6. What is thrashing? How can it be prevented? [4 marks]
+Q7. Describe the process control block and what happens during a context switch. [5 marks]

@@ -1,0 +1,16 @@
+Operating Systems - Class Notes
+
+PROCESSES
+A process is a program in execution. Each process has its own address space, program counter, registers and a process control block (PCB) that stores its state. The main process states are new, ready, running, waiting and terminated. A context switch saves the state of the running process into its PCB and loads the state of the next process; it is pure overhead because no useful work is done during the switch.
+
+CPU SCHEDULING
+The scheduler decides which ready process runs next. Round Robin gives each process a fixed time quantum and rotates through the ready queue; a very large quantum makes it behave like First-Come-First-Served, while a very small quantum causes too many context switches. Shortest Job First minimises average waiting time but can cause starvation of long jobs. Priority scheduling can also starve low-priority processes; aging, which gradually raises the priority of waiting processes, fixes this.
+
+DEADLOCKS
+A deadlock is a situation where a set of processes are each waiting for a resource held by another process in the set, so none can proceed. Four conditions must hold at the same time: mutual exclusion, hold and wait, no preemption, and circular wait. Deadlock prevention works by making at least one of these conditions impossible, for example by imposing a global ordering on resources to break circular wait. Deadlock avoidance, such as the Banker's algorithm, grants a request only if the system stays in a safe state. A safe state is one where there is an order in which all processes can finish even if each requests its maximum need.
+
+MEMORY MANAGEMENT
+Paging divides physical memory into fixed-size frames and logical memory into pages of the same size. A page table maps each page number to a frame number. The logical address is split into a page number and an offset; the offset is unchanged by translation. Paging removes external fragmentation but can cause internal fragmentation in the last page of a process. A TLB (translation lookaside buffer) caches recent page-table entries to speed up translation.
+
+VIRTUAL MEMORY
+Demand paging loads a page into memory only when it is first referenced. A page fault occurs when a process accesses a page that is not in memory; the OS loads it from disk. When memory is full a page replacement algorithm chooses a victim page. FIFO replaces the oldest page and can suffer from Belady's anomaly. LRU replaces the page not used for the longest time. The optimal algorithm replaces the page that will not be used for the longest time in the future and gives the fewest faults but cannot be implemented in practice. Thrashing happens when a process spends more time paging than executing.
